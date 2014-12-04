@@ -289,7 +289,7 @@
         <!--个人主页-->
         <scene sceneID="1at-oO-cwE">
             <objects>
-                <viewController title="个人主页" id="ZGN-g4-8dl" customClass="item1ViewController" sceneMemberID="viewController">
+                <viewController title="个人主页" id="ZGN-g4-8dl" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JBR-tq-6vZ"/>
                         <viewControllerLayoutGuide type="bottom" id="fJs-EX-hAc"/>
@@ -343,7 +343,8 @@
         <!--他人主页-->
         <scene sceneID="1DO-PW-bye">
             <objects>
-                <viewController title="他人主页" id="DBa-IZ-2AE" customClass="item1ViewController" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0OB-sr-fTG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController title="他人主页" id="DBa-IZ-2AE" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QZQ-BG-1Og"/>
                         <viewControllerLayoutGuide type="bottom" id="twq-uG-upo"/>
@@ -366,7 +367,6 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="个人主页" id="6T3-OE-XqT"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0OB-sr-fTG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1600.5" y="-454"/>
         </scene>

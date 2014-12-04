@@ -8,13 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		781ECBD41A2EF37C00B14CAF /* MainLogic.Storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 781ECBD21A2EF37C00B14CAF /* MainLogic.Storyboard */; };
-		787C7EDB1A2F44FC00657691 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 787C7EDA1A2F44FC00657691 /* FirstViewController.m */; };
-		787C7EDE1A2F454400657691 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 787C7EDD1A2F454400657691 /* ThirdViewController.m */; };
-		787C7EE11A2F50EC00657691 /* item1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 787C7EE01A2F50EC00657691 /* item1ViewController.m */; };
 		78C6C8651A2B411100D8425E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C6C8641A2B411100D8425E /* main.m */; };
 		78C6C8681A2B411100D8425E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C6C8671A2B411100D8425E /* AppDelegate.m */; };
 		78C6C86B1A2B411100D8425E /* Sportplus.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 78C6C8691A2B411100D8425E /* Sportplus.xcdatamodeld */; };
-		78C6C86E1A2B411100D8425E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C6C86D1A2B411100D8425E /* ViewController.m */; };
 		78C6C8711A2B411100D8425E /* Registe.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78C6C86F1A2B411100D8425E /* Registe.storyboard */; };
 		78C6C8731A2B411100D8425E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78C6C8721A2B411100D8425E /* Images.xcassets */; };
 		78C6C8761A2B411100D8425E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78C6C8741A2B411100D8425E /* LaunchScreen.xib */; };
@@ -35,20 +31,12 @@
 /* Begin PBXFileReference section */
 		32E3A11029BD6EE4369FE01C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		781ECBD31A2EF37C00B14CAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainLogic.Storyboard; sourceTree = "<group>"; };
-		787C7ED91A2F44FC00657691 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		787C7EDA1A2F44FC00657691 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		787C7EDC1A2F454400657691 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
-		787C7EDD1A2F454400657691 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
-		787C7EDF1A2F50EC00657691 /* item1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = item1ViewController.h; sourceTree = "<group>"; };
-		787C7EE01A2F50EC00657691 /* item1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = item1ViewController.m; sourceTree = "<group>"; };
 		78C6C85F1A2B411100D8425E /* Sportplus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sportplus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78C6C8631A2B411100D8425E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78C6C8641A2B411100D8425E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		78C6C8661A2B411100D8425E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		78C6C8671A2B411100D8425E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		78C6C86A1A2B411100D8425E /* Sportplus.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Sportplus.xcdatamodel; sourceTree = "<group>"; };
-		78C6C86C1A2B411100D8425E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		78C6C86D1A2B411100D8425E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		78C6C8701A2B411100D8425E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Registe.storyboard; sourceTree = "<group>"; };
 		78C6C8721A2B411100D8425E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		78C6C8751A2B411100D8425E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -107,14 +95,6 @@
 		787C7ED81A2F44C800657691 /* Viewcontroller */ = {
 			isa = PBXGroup;
 			children = (
-				787C7EDF1A2F50EC00657691 /* item1ViewController.h */,
-				787C7EE01A2F50EC00657691 /* item1ViewController.m */,
-				78C6C86C1A2B411100D8425E /* ViewController.h */,
-				78C6C86D1A2B411100D8425E /* ViewController.m */,
-				787C7ED91A2F44FC00657691 /* FirstViewController.h */,
-				787C7EDA1A2F44FC00657691 /* FirstViewController.m */,
-				787C7EDC1A2F454400657691 /* ThirdViewController.h */,
-				787C7EDD1A2F454400657691 /* ThirdViewController.m */,
 			);
 			name = Viewcontroller;
 			sourceTree = "<group>";
@@ -318,11 +298,7 @@
 			files = (
 				78C6C8681A2B411100D8425E /* AppDelegate.m in Sources */,
 				78C6C86B1A2B411100D8425E /* Sportplus.xcdatamodeld in Sources */,
-				787C7EDE1A2F454400657691 /* ThirdViewController.m in Sources */,
-				787C7EDB1A2F44FC00657691 /* FirstViewController.m in Sources */,
-				78C6C86E1A2B411100D8425E /* ViewController.m in Sources */,
 				78C6C8651A2B411100D8425E /* main.m in Sources */,
-				787C7EE11A2F50EC00657691 /* item1ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

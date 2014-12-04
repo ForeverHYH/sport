@@ -7,7 +7,7 @@
         <!--注册-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController title="注册" id="vXZ-lx-hvc" customClass="FirstViewController" sceneMemberID="viewController">
+                <viewController title="注册" id="vXZ-lx-hvc" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -61,8 +61,7 @@
                                     <rect key="frame" x="216" y="427" width="30" height="30"/>
                                 </variation>
                                 <connections>
-                                    <action selector="Registe:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="nNr-7G-mlC"/>
-                                    <segue destination="Y9j-va-Htl" kind="show" id="Xm0-GO-sIi"/>
+                                    <segue destination="Y9j-va-Htl" kind="show" id="8nq-M0-wtF"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -155,7 +154,7 @@
         <!--注册step1-->
         <scene sceneID="fX5-wV-YnO">
             <objects>
-                <viewController title="注册step1" id="Y9j-va-Htl" customClass="ViewController" sceneMemberID="viewController">
+                <viewController title="注册step1" id="Y9j-va-Htl" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9pI-cm-QEV"/>
                         <viewControllerLayoutGuide type="bottom" id="9AW-rS-kaj"/>
@@ -173,8 +172,7 @@
                                     <rect key="frame" x="137" y="461" width="45" height="30"/>
                                 </variation>
                                 <connections>
-                                    <action selector="nextStep:" destination="Y9j-va-Htl" eventType="touchUpInside" id="Efn-4p-5Hd"/>
-                                    <segue destination="EmE-LV-jS2" kind="show" id="lWY-hK-aLl"/>
+                                    <segue destination="EmE-LV-jS2" kind="show" id="Q0N-Ks-7sb"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -220,7 +218,7 @@
         <!--注册step2-->
         <scene sceneID="pSq-YX-xLs">
             <objects>
-                <viewController title="注册step2" id="EmE-LV-jS2" customClass="ThirdViewController" sceneMemberID="viewController">
+                <viewController title="注册step2" id="EmE-LV-jS2" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OcD-KU-93O"/>
                         <viewControllerLayoutGuide type="bottom" id="9zO-UQ-CbX"/>
@@ -238,8 +236,7 @@
                                     <rect key="frame" x="145" y="463" width="30" height="30"/>
                                 </variation>
                                 <connections>
-                                    <action selector="StoryBoardChange:" destination="EmE-LV-jS2" eventType="touchUpInside" id="2cF-TO-F0Q"/>
-                                    <segue destination="vVX-Nu-Lo7" kind="custom" customClass="RBStoryboardModalSegue" id="qdg-Bk-R9P"/>
+                                    <segue destination="vVX-Nu-Lo7" kind="custom" customClass="RBStoryboardModalSegue" id="khh-cA-GpM"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -281,7 +278,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oIf-XF-WHz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1572" y="1272"/>
+            <point key="canvasLocation" x="1593" y="1246"/>
         </scene>
     </scenes>
 </document>
