@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-RBStoryboardLink.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Reachability.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>5CCDB3C47C605AB615ACA1FC</key>
+		<key>1561A7C6E544A39EBEE6BECD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8ED07CB5CBB302729FAC17D7</key>
+		<key>440C46B8B78A1DDFF67824B4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A5E776D69F9FBF22ECF6FC10</key>
+		<key>99BF0EC867547DD09BD2138D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FF267F8D179A1C8361A3F0CF</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import <AFNetworking/AFNetworking.h>
+#import <RBStoryboardLink/RBStoryboardLink.h>
 
 @interface ViewController ()
 
@@ -22,6 +24,9 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)nextStep:(id)sender {
+    NSLog(@"Steo2");
 }
 
 @end
