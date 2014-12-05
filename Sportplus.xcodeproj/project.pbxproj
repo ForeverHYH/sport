@@ -16,6 +16,7 @@
 		78C6C8761A2B411100D8425E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78C6C8741A2B411100D8425E /* LaunchScreen.xib */; };
 		78C6C8821A2B411200D8425E /* SportplusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C6C8811A2B411200D8425E /* SportplusTests.m */; };
 		D7EDA3A7252F7A37ADCA65F5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D722640D16A2035FDB4981 /* libPods.a */; };
+		F11581E61A31861D00420CC3 /* testgitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F11581E51A31861D00420CC3 /* testgitViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,8 @@
 		78C6C8811A2B411200D8425E /* SportplusTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SportplusTests.m; sourceTree = "<group>"; };
 		A6D722640D16A2035FDB4981 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6A6B0A91962E9C6FD0C4158 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		F11581E41A31861D00420CC3 /* testgitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testgitViewController.h; sourceTree = "<group>"; };
+		F11581E51A31861D00420CC3 /* testgitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testgitViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +98,8 @@
 		787C7ED81A2F44C800657691 /* Viewcontroller */ = {
 			isa = PBXGroup;
 			children = (
+				F11581E31A3185FE00420CC3 /* MainLogicVC */,
+				F11581E21A3185F200420CC3 /* RegisteVC */,
 			);
 			name = Viewcontroller;
 			sourceTree = "<group>";
@@ -158,6 +163,22 @@
 				78C6C8801A2B411200D8425E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F11581E21A3185F200420CC3 /* RegisteVC */ = {
+			isa = PBXGroup;
+			children = (
+				F11581E41A31861D00420CC3 /* testgitViewController.h */,
+				F11581E51A31861D00420CC3 /* testgitViewController.m */,
+			);
+			name = RegisteVC;
+			sourceTree = "<group>";
+		};
+		F11581E31A3185FE00420CC3 /* MainLogicVC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = MainLogicVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				78C6C8681A2B411100D8425E /* AppDelegate.m in Sources */,
+				F11581E61A31861D00420CC3 /* testgitViewController.m in Sources */,
 				78C6C86B1A2B411100D8425E /* Sportplus.xcdatamodeld in Sources */,
 				78C6C8651A2B411100D8425E /* main.m in Sources */,
 			);
