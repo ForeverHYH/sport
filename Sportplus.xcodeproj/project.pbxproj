@@ -17,6 +17,16 @@
 		78C6C8821A2B411200D8425E /* SportplusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C6C8811A2B411200D8425E /* SportplusTests.m */; };
 		D7EDA3A7252F7A37ADCA65F5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D722640D16A2035FDB4981 /* libPods.a */; };
 		F11581E61A31861D00420CC3 /* testgitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F11581E51A31861D00420CC3 /* testgitViewController.m */; };
+		F1887DB91A32D4810056A568 /* RegisterMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1887DB81A32D4810056A568 /* RegisterMainViewController.m */; };
+		F1887DBC1A32F6E80056A568 /* ChooseSchoolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1887DBB1A32F6E80056A568 /* ChooseSchoolViewController.m */; };
+		F1887DBF1A3329D30056A568 /* ChooseProfessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1887DBE1A3329D30056A568 /* ChooseProfessionViewController.m */; };
+		F1887DC21A332B2D0056A568 /* ChooseTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1887DC11A332B2D0056A568 /* ChooseTimeViewController.m */; };
+		F1887DC51A332CDE0056A568 /* ReigisterNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1887DC41A332CDE0056A568 /* ReigisterNameViewController.m */; };
+		F1887DC81A336D020056A568 /* RigisterDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1887DC71A336D020056A568 /* RigisterDetailViewController.m */; };
+		F1887DCC1A3372700056A568 /* levelTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1887DCA1A3372700056A568 /* levelTableViewCell.m */; };
+		F1887DCD1A3372700056A568 /* levelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1887DCB1A3372700056A568 /* levelTableViewCell.xib */; };
+		F1B875F11A34B08F003AA3ED /* TagTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B875EF1A34B08F003AA3ED /* TagTableViewCell.m */; };
+		F1B875F21A34B08F003AA3ED /* TagTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1B875F01A34B08F003AA3ED /* TagTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +58,24 @@
 		B6A6B0A91962E9C6FD0C4158 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F11581E41A31861D00420CC3 /* testgitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testgitViewController.h; sourceTree = "<group>"; };
 		F11581E51A31861D00420CC3 /* testgitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testgitViewController.m; sourceTree = "<group>"; };
+		F1887DB71A32D4810056A568 /* RegisterMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterMainViewController.h; sourceTree = "<group>"; };
+		F1887DB81A32D4810056A568 /* RegisterMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterMainViewController.m; sourceTree = "<group>"; };
+		F1887DBA1A32F6E80056A568 /* ChooseSchoolViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseSchoolViewController.h; sourceTree = "<group>"; };
+		F1887DBB1A32F6E80056A568 /* ChooseSchoolViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseSchoolViewController.m; sourceTree = "<group>"; };
+		F1887DBD1A3329D30056A568 /* ChooseProfessionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseProfessionViewController.h; sourceTree = "<group>"; };
+		F1887DBE1A3329D30056A568 /* ChooseProfessionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseProfessionViewController.m; sourceTree = "<group>"; };
+		F1887DC01A332B2D0056A568 /* ChooseTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseTimeViewController.h; sourceTree = "<group>"; };
+		F1887DC11A332B2D0056A568 /* ChooseTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseTimeViewController.m; sourceTree = "<group>"; };
+		F1887DC31A332CDE0056A568 /* ReigisterNameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReigisterNameViewController.h; sourceTree = "<group>"; };
+		F1887DC41A332CDE0056A568 /* ReigisterNameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReigisterNameViewController.m; sourceTree = "<group>"; };
+		F1887DC61A336D020056A568 /* RigisterDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RigisterDetailViewController.h; sourceTree = "<group>"; };
+		F1887DC71A336D020056A568 /* RigisterDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RigisterDetailViewController.m; sourceTree = "<group>"; };
+		F1887DC91A3372700056A568 /* levelTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = levelTableViewCell.h; sourceTree = "<group>"; };
+		F1887DCA1A3372700056A568 /* levelTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = levelTableViewCell.m; sourceTree = "<group>"; };
+		F1887DCB1A3372700056A568 /* levelTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = levelTableViewCell.xib; sourceTree = "<group>"; };
+		F1B875EE1A34B08F003AA3ED /* TagTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagTableViewCell.h; sourceTree = "<group>"; };
+		F1B875EF1A34B08F003AA3ED /* TagTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagTableViewCell.m; sourceTree = "<group>"; };
+		F1B875F01A34B08F003AA3ED /* TagTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TagTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +198,24 @@
 			children = (
 				F11581E41A31861D00420CC3 /* testgitViewController.h */,
 				F11581E51A31861D00420CC3 /* testgitViewController.m */,
+				F1887DB71A32D4810056A568 /* RegisterMainViewController.h */,
+				F1887DB81A32D4810056A568 /* RegisterMainViewController.m */,
+				F1887DBA1A32F6E80056A568 /* ChooseSchoolViewController.h */,
+				F1887DBB1A32F6E80056A568 /* ChooseSchoolViewController.m */,
+				F1887DBD1A3329D30056A568 /* ChooseProfessionViewController.h */,
+				F1887DBE1A3329D30056A568 /* ChooseProfessionViewController.m */,
+				F1887DC01A332B2D0056A568 /* ChooseTimeViewController.h */,
+				F1887DC11A332B2D0056A568 /* ChooseTimeViewController.m */,
+				F1887DC31A332CDE0056A568 /* ReigisterNameViewController.h */,
+				F1887DC41A332CDE0056A568 /* ReigisterNameViewController.m */,
+				F1887DC61A336D020056A568 /* RigisterDetailViewController.h */,
+				F1887DC71A336D020056A568 /* RigisterDetailViewController.m */,
+				F1887DC91A3372700056A568 /* levelTableViewCell.h */,
+				F1887DCA1A3372700056A568 /* levelTableViewCell.m */,
+				F1887DCB1A3372700056A568 /* levelTableViewCell.xib */,
+				F1B875EE1A34B08F003AA3ED /* TagTableViewCell.h */,
+				F1B875EF1A34B08F003AA3ED /* TagTableViewCell.m */,
+				F1B875F01A34B08F003AA3ED /* TagTableViewCell.xib */,
 			);
 			name = RegisteVC;
 			sourceTree = "<group>";
@@ -263,10 +309,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1B875F21A34B08F003AA3ED /* TagTableViewCell.xib in Resources */,
 				78C6C8711A2B411100D8425E /* Registe.storyboard in Resources */,
 				78C6C8761A2B411100D8425E /* LaunchScreen.xib in Resources */,
 				781ECBD41A2EF37C00B14CAF /* MainLogic.Storyboard in Resources */,
 				78C6C8731A2B411100D8425E /* Images.xcassets in Resources */,
+				F1887DCD1A3372700056A568 /* levelTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,10 +365,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1887DC81A336D020056A568 /* RigisterDetailViewController.m in Sources */,
+				F1887DC51A332CDE0056A568 /* ReigisterNameViewController.m in Sources */,
 				78C6C8681A2B411100D8425E /* AppDelegate.m in Sources */,
 				F11581E61A31861D00420CC3 /* testgitViewController.m in Sources */,
+				F1887DBF1A3329D30056A568 /* ChooseProfessionViewController.m in Sources */,
 				78C6C86B1A2B411100D8425E /* Sportplus.xcdatamodeld in Sources */,
+				F1887DC21A332B2D0056A568 /* ChooseTimeViewController.m in Sources */,
+				F1887DBC1A32F6E80056A568 /* ChooseSchoolViewController.m in Sources */,
+				F1B875F11A34B08F003AA3ED /* TagTableViewCell.m in Sources */,
 				78C6C8651A2B411100D8425E /* main.m in Sources */,
+				F1887DCC1A3372700056A568 /* levelTableViewCell.m in Sources */,
+				F1887DB91A32D4810056A568 /* RegisterMainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

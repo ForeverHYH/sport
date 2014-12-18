@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Ias-5u-qT9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Ias-5u-qT9">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--注册-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController title="注册" id="vXZ-lx-hvc" sceneMemberID="viewController">
+                <viewController title="注册" id="vXZ-lx-hvc" customClass="RegisterMainViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -16,13 +18,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iFh-RU-XAV">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="选择学校">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RegisterBackground" translatesAutoresizingMaskIntoConstraints="NO" id="paV-BH-D3p">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iFh-RU-XAV">
+                                <rect key="frame" x="-23" y="-15" width="2371" height="345"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="64C-1N-1Be"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" backgroundImage="SchoolName">
+                                    <attributedString key="attributedTitle"/>
                                 </state>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="136" y="241" width="46" height="30"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="64C-1N-1Be"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="64C-1N-1Be"/>
+                                    </mask>
                                 </variation>
                                 <connections>
                                     <segue destination="RUA-z6-Yeb" kind="show" id="n4N-jO-7PI"/>
@@ -30,11 +46,12 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NdC-k1-PBV">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="选择学院">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" backgroundImage="SchoolSystem">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="137" y="284" width="46" height="30"/>
+                                    <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="15"/>
+                                    <rect key="frame" x="29" y="417" width="262" height="40"/>
                                 </variation>
                                 <connections>
                                     <segue destination="E8p-Q8-5XE" kind="show" id="9Ox-mh-Fya"/>
@@ -42,36 +59,78 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="STX-0k-Sep">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="选择时间">
+                                <state key="normal" backgroundImage="InSchoolTime">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="137" y="330" width="46" height="30"/>
+                                    <rect key="frame" x="29" y="470" width="262" height="40"/>
                                 </variation>
                                 <connections>
                                     <segue destination="ikS-C7-FrK" kind="show" id="2hr-5g-ESA"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="icT-1s-ZzY">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="icT-1s-ZzY">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="注册">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="注册" image="RigisterButton"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="216" y="427" width="30" height="30"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                    <rect key="frame" x="242" y="526" width="42" height="22"/>
                                 </variation>
                                 <connections>
+                                    <action selector="rigister:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="hbp-H9-UhD"/>
                                     <segue destination="Y9j-va-Htl" kind="show" id="8nq-M0-wtF"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="学校" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B4L-UT-e4p">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="92" y="374" width="173" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="学院" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qqt-ix-msi">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="92" y="426" width="173" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="时间" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tdE-dD-Pjx">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="92" y="479" width="173" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="iFh-RU-XAV" secondAttribute="bottom" constant="164" id="0kK-Sd-L64"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iFh-RU-XAV" secondAttribute="trailing" constant="13" id="3q7-sQ-2WR"/>
+                            <constraint firstItem="iFh-RU-XAV" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="13" id="umv-Wh-Fv9"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="iFh-RU-XAV"/>
                                 <exclude reference="NdC-k1-PBV"/>
                                 <exclude reference="STX-0k-Sep"/>
                                 <exclude reference="icT-1s-ZzY"/>
+                                <exclude reference="B4L-UT-e4p"/>
+                                <exclude reference="qqt-ix-msi"/>
+                                <exclude reference="tdE-dD-Pjx"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="0kK-Sd-L64"/>
+                                <exclude reference="3q7-sQ-2WR"/>
+                                <exclude reference="umv-Wh-Fv9"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -80,21 +139,34 @@
                                 <include reference="NdC-k1-PBV"/>
                                 <include reference="STX-0k-Sep"/>
                                 <include reference="icT-1s-ZzY"/>
+                                <include reference="B4L-UT-e4p"/>
+                                <include reference="qqt-ix-msi"/>
+                                <include reference="tdE-dD-Pjx"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="0kK-Sd-L64"/>
+                                <include reference="3q7-sQ-2WR"/>
+                                <include reference="umv-Wh-Fv9"/>
                             </mask>
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="HUb-he-I7j"/>
                     <keyCommands/>
                     <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="professionName" destination="qqt-ix-msi" id="yJm-BM-dSg"/>
+                        <outlet property="schoolName" destination="B4L-UT-e4p" id="kXQ-5Z-YnG"/>
+                        <outlet property="time" destination="tdE-dD-Pjx" id="5D9-n2-rF4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-117" y="94"/>
+            <point key="canvasLocation" x="-192" y="94"/>
         </scene>
-        <!--选择学院-->
+        <!--选择院系-->
         <scene sceneID="5RS-fb-03h">
             <objects>
-                <viewController title="选择学院" id="E8p-Q8-5XE" sceneMemberID="viewController">
+                <viewController title="选择院系" id="E8p-Q8-5XE" customClass="ChooseProfessionViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mdG-ij-Hhq"/>
                         <viewControllerLayoutGuide type="bottom" id="5zT-4g-7Y2"/>
@@ -102,10 +174,40 @@
                     <view key="view" contentMode="scaleToFill" id="7q7-vT-Iac">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SearchBackground" translatesAutoresizingMaskIntoConstraints="NO" id="8KG-Kv-zf6">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                </variation>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="pPC-7C-s5f">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="28" y="102" width="265" height="363"/>
+                                </variation>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="8KG-Kv-zf6"/>
+                                <exclude reference="pPC-7C-s5f"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="8KG-Kv-zf6"/>
+                                <include reference="pPC-7C-s5f"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="选择学院" id="t0x-dj-HC5"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="professionTableView" destination="pPC-7C-s5f" id="FzP-cY-dgI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PQR-WG-hJA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -114,7 +216,7 @@
         <!--选择学校-->
         <scene sceneID="W9m-KR-dgQ">
             <objects>
-                <viewController title="选择学校" id="RUA-z6-Yeb" sceneMemberID="viewController">
+                <viewController title="选择学校" id="RUA-z6-Yeb" customClass="ChooseSchoolViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aFf-Pg-Jcu"/>
                         <viewControllerLayoutGuide type="bottom" id="16Q-AB-L6R"/>
@@ -122,19 +224,78 @@
                     <view key="view" contentMode="scaleToFill" id="VVO-Ro-1vT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SearchBackground" translatesAutoresizingMaskIntoConstraints="NO" id="vyB-yb-4W8">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SearchBar" translatesAutoresizingMaskIntoConstraints="NO" id="l11-Ua-Q1q">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="64" width="320" height="40"/>
+                                </variation>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="searchTxtField" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rTW-gd-jdV">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="47" y="69" width="243" height="30"/>
+                                </variation>
+                            </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="1p3-08-VEa">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="44" y="107" width="232" height="303"/>
+                                </variation>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="vyB-yb-4W8"/>
+                                <exclude reference="l11-Ua-Q1q"/>
+                                <exclude reference="rTW-gd-jdV"/>
+                                <exclude reference="1p3-08-VEa"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="vyB-yb-4W8"/>
+                                <include reference="l11-Ua-Q1q"/>
+                                <include reference="rTW-gd-jdV"/>
+                                <include reference="1p3-08-VEa"/>
+                            </mask>
+                        </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="选择学院" id="hf9-YR-Jye"/>
+                    <navigationItem key="navigationItem" title="选择学校" id="hf9-YR-Jye"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="schoolTableView" destination="1p3-08-VEa" id="lwl-Dc-X44"/>
+                        <outlet property="searchBar" destination="rTW-gd-jdV" id="K3Y-bw-EKw"/>
+                        <outlet property="searchDisplayController" destination="5mf-6K-rcA" id="lTA-1f-dNN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tff-Zb-lU5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="5mf-6K-rcA">
+                    <connections>
+                        <outlet property="delegate" destination="RUA-z6-Yeb" id="1In-pL-Lbs"/>
+                        <outlet property="searchContentsController" destination="RUA-z6-Yeb" id="d4u-aS-261"/>
+                        <outlet property="searchResultsDataSource" destination="RUA-z6-Yeb" id="MAp-am-9vI"/>
+                        <outlet property="searchResultsDelegate" destination="RUA-z6-Yeb" id="23s-6Y-bN4"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="747" y="-720"/>
+            <point key="canvasLocation" x="747" y="-714"/>
         </scene>
         <!--选择时间-->
         <scene sceneID="u9k-SU-Zxe">
             <objects>
-                <viewController title="选择时间" id="ikS-C7-FrK" sceneMemberID="viewController">
+                <viewController title="选择时间" id="ikS-C7-FrK" customClass="ChooseTimeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Z5Q-of-xuJ"/>
                         <viewControllerLayoutGuide type="bottom" id="MIN-t8-KiV"/>
@@ -142,10 +303,58 @@
                     <view key="view" contentMode="scaleToFill" id="OZ5-BF-xfe">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SearchBackground" translatesAutoresizingMaskIntoConstraints="NO" id="NfF-bD-xYe">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SearchBar" translatesAutoresizingMaskIntoConstraints="NO" id="9IJ-Bn-Hku">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="64" width="320" height="40"/>
+                                </variation>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u2Z-ra-CDd">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="46" y="69" width="243" height="30"/>
+                                </variation>
+                            </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="j5u-cL-w23">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="46" y="105" width="232" height="303"/>
+                                </variation>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="NfF-bD-xYe"/>
+                                <exclude reference="9IJ-Bn-Hku"/>
+                                <exclude reference="u2Z-ra-CDd"/>
+                                <exclude reference="j5u-cL-w23"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="NfF-bD-xYe"/>
+                                <include reference="9IJ-Bn-Hku"/>
+                                <include reference="u2Z-ra-CDd"/>
+                                <include reference="j5u-cL-w23"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="选择时间" id="11Y-j3-xUU"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="timeTableView" destination="j5u-cL-w23" id="bUV-4U-4hg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PQB-0A-eM5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -154,7 +363,7 @@
         <!--注册step1-->
         <scene sceneID="fX5-wV-YnO">
             <objects>
-                <viewController title="注册step1" id="Y9j-va-Htl" sceneMemberID="viewController">
+                <viewController title="注册step1" id="Y9j-va-Htl" customClass="ReigisterNameViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9pI-cm-QEV"/>
                         <viewControllerLayoutGuide type="bottom" id="9AW-rS-kaj"/>
@@ -163,37 +372,288 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZgX-l3-v73">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SearchBackground" translatesAutoresizingMaskIntoConstraints="NO" id="7om-tR-2Jc">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wbi-02-dZE">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="下一步">
+                                <state key="normal" title="Button" image="badminton">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="137" y="461" width="45" height="30"/>
+                                    <rect key="frame" x="128" y="397" width="65" height="65"/>
+                                </variation>
+                                <connections>
+                                    <action selector="badmintonButton:" destination="Y9j-va-Htl" eventType="touchUpInside" id="1FT-Sy-TnL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ra-dZ-4z8">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button" image="basketball">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="227" y="338" width="65" height="65"/>
+                                </variation>
+                                <connections>
+                                    <action selector="basketballButton:" destination="Y9j-va-Htl" eventType="touchUpInside" id="Jjl-eH-im9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Wx-sf-vWK">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button" image="soccer">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="227" y="236" width="65" height="65"/>
+                                </variation>
+                                <connections>
+                                    <action selector="soccerButton:" destination="Y9j-va-Htl" eventType="touchUpInside" id="1kt-UF-FQC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IC5-o7-VNx">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button" image="run">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="128" y="296" width="65" height="65"/>
+                                </variation>
+                                <connections>
+                                    <action selector="runButton:" destination="Y9j-va-Htl" eventType="touchUpInside" id="WxX-oo-tOo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZgX-l3-v73">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="下一步" image="NextStep">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="520" width="289" height="40"/>
                                 </variation>
                                 <connections>
                                     <segue destination="EmE-LV-jS2" kind="show" id="Q0N-Ks-7sb"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="inputNameField" translatesAutoresizingMaskIntoConstraints="NO" id="tPs-ys-hWU">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="8" y="81" width="304" height="40"/>
+                                </variation>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入真实姓名" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fzm-Ns-zsf">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="99" y="85" width="193" height="35"/>
+                                </variation>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="geder" translatesAutoresizingMaskIntoConstraints="NO" id="CJL-2E-4xR">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="8" y="129" width="74" height="40"/>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u0E-gU-DuO">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button" image="male">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="99" y="129" width="85" height="40"/>
+                                </variation>
+                                <connections>
+                                    <action selector="maleButton:" destination="Y9j-va-Htl" eventType="touchUpInside" id="J9o-Kc-b9R"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xXA-Wa-OYl">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button" image="female">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="202" y="129" width="85" height="40"/>
+                                </variation>
+                                <connections>
+                                    <action selector="femaleButton:" destination="Y9j-va-Htl" eventType="touchUpInside" id="9fh-pO-lan"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Guw-Dr-wXV">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button" image="pingpong">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="128" y="194" width="65" height="65"/>
+                                </variation>
+                                <connections>
+                                    <action selector="pingpongButton:" destination="Y9j-va-Htl" eventType="touchUpInside" id="Yzb-FJ-SyS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lz5-xd-CNm">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button" image="tennise">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="22" y="236" width="65" height="65"/>
+                                </variation>
+                                <connections>
+                                    <action selector="tenniseButton:" destination="Y9j-va-Htl" eventType="touchUpInside" id="axo-mN-QTp"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="羽毛球" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9NY-uF-sc3">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="139" y="470" width="45" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="＊请至少选择一项喜欢的体育运动" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sNN-z1-PrM">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="41" y="492" width="238" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="网球" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vIB-8m-ndN">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="39" y="306" width="31" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="跑步" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ybi-VM-231">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="146" y="368" width="31" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="足球" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NWM-Rd-nHA">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="244" y="306" width="31" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="篮球" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQF-2U-GT3">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="244" y="412" width="31" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="健身" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uta-Cy-La6">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="39" y="412" width="31" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="乒乓球" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qqH-hk-21A">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="139" y="267" width="45" height="21"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OLd-iT-Q8z">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button" image="build">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="22" y="338" width="65" height="65"/>
+                                </variation>
+                                <connections>
+                                    <action selector="buildButton:" destination="Y9j-va-Htl" eventType="touchUpInside" id="BNw-qI-MPe"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
+                                <exclude reference="7om-tR-2Jc"/>
+                                <exclude reference="Wbi-02-dZE"/>
+                                <exclude reference="2Ra-dZ-4z8"/>
+                                <exclude reference="0Wx-sf-vWK"/>
+                                <exclude reference="IC5-o7-VNx"/>
                                 <exclude reference="ZgX-l3-v73"/>
+                                <exclude reference="tPs-ys-hWU"/>
+                                <exclude reference="Fzm-Ns-zsf"/>
+                                <exclude reference="CJL-2E-4xR"/>
+                                <exclude reference="u0E-gU-DuO"/>
+                                <exclude reference="xXA-Wa-OYl"/>
+                                <exclude reference="Guw-Dr-wXV"/>
+                                <exclude reference="lz5-xd-CNm"/>
+                                <exclude reference="9NY-uF-sc3"/>
+                                <exclude reference="sNN-z1-PrM"/>
+                                <exclude reference="vIB-8m-ndN"/>
+                                <exclude reference="Ybi-VM-231"/>
+                                <exclude reference="NWM-Rd-nHA"/>
+                                <exclude reference="MQF-2U-GT3"/>
+                                <exclude reference="Uta-Cy-La6"/>
+                                <exclude reference="qqH-hk-21A"/>
+                                <exclude reference="OLd-iT-Q8z"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
+                                <include reference="7om-tR-2Jc"/>
+                                <include reference="Wbi-02-dZE"/>
+                                <include reference="2Ra-dZ-4z8"/>
+                                <include reference="0Wx-sf-vWK"/>
+                                <include reference="IC5-o7-VNx"/>
                                 <include reference="ZgX-l3-v73"/>
+                                <include reference="tPs-ys-hWU"/>
+                                <include reference="Fzm-Ns-zsf"/>
+                                <include reference="CJL-2E-4xR"/>
+                                <include reference="u0E-gU-DuO"/>
+                                <include reference="xXA-Wa-OYl"/>
+                                <include reference="Guw-Dr-wXV"/>
+                                <include reference="lz5-xd-CNm"/>
+                                <include reference="9NY-uF-sc3"/>
+                                <include reference="sNN-z1-PrM"/>
+                                <include reference="vIB-8m-ndN"/>
+                                <include reference="Ybi-VM-231"/>
+                                <include reference="NWM-Rd-nHA"/>
+                                <include reference="MQF-2U-GT3"/>
+                                <include reference="Uta-Cy-La6"/>
+                                <include reference="qqH-hk-21A"/>
+                                <include reference="OLd-iT-Q8z"/>
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="注册1" id="qNW-Du-P55"/>
+                    <navigationItem key="navigationItem" title="注册" id="qNW-Du-P55"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="realName" destination="Fzm-Ns-zsf" id="BmS-41-KOU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fQl-9t-cOf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="225" y="1218"/>
+            <point key="canvasLocation" x="174" y="1219"/>
         </scene>
         <!--注册Nav-->
         <scene sceneID="M2h-bY-GAz">
@@ -213,12 +673,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uKH-A3-CbI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-697.5" y="88"/>
+            <point key="canvasLocation" x="-828" y="94"/>
         </scene>
         <!--注册step2-->
         <scene sceneID="pSq-YX-xLs">
             <objects>
-                <viewController title="注册step2" id="EmE-LV-jS2" sceneMemberID="viewController">
+                <viewController title="注册step2" id="EmE-LV-jS2" customClass="RigisterDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OcD-KU-93O"/>
                         <viewControllerLayoutGuide type="bottom" id="9zO-UQ-CbX"/>
@@ -227,13 +687,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Wn-fb-wOQ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SearchBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Baj-vk-MIA">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="-2" y="0.0" width="332" height="576"/>
+                                </variation>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="UEy-wd-qB7">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="65" width="320" height="438"/>
+                                </variation>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Wn-fb-wOQ">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="跳转">
+                                <state key="normal" image="NextStep">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="145" y="463" width="30" height="30"/>
+                                    <rect key="frame" x="16" y="520" width="289" height="40"/>
                                 </variation>
                                 <connections>
                                     <segue destination="vVX-Nu-Lo7" kind="custom" customClass="RBStoryboardModalSegue" id="khh-cA-GpM"/>
@@ -243,21 +716,28 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
+                                <exclude reference="Baj-vk-MIA"/>
+                                <exclude reference="UEy-wd-qB7"/>
                                 <exclude reference="1Wn-fb-wOQ"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
+                                <include reference="Baj-vk-MIA"/>
+                                <include reference="UEy-wd-qB7"/>
                                 <include reference="1Wn-fb-wOQ"/>
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="注册2" id="UeP-lN-bZO"/>
+                    <navigationItem key="navigationItem" title="注册" id="UeP-lN-bZO"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="tableView" destination="UEy-wd-qB7" id="KaQ-Jm-shM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yw9-m6-YCM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="888" y="1265"/>
+            <point key="canvasLocation" x="856.5" y="1219"/>
         </scene>
         <!--Storyboard Link-->
         <scene sceneID="mhi-R5-bWp">
@@ -278,7 +758,28 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oIf-XF-WHz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1593" y="1246"/>
+            <point key="canvasLocation" x="1629" y="1219"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="InSchoolTime" width="2299" height="346"/>
+        <image name="NextStep" width="642" height="88"/>
+        <image name="RegisterBackground" width="400" height="709"/>
+        <image name="RigisterButton" width="148" height="86"/>
+        <image name="SchoolName" width="1149" height="172"/>
+        <image name="SchoolSystem" width="1149" height="172"/>
+        <image name="SearchBackground" width="356" height="630"/>
+        <image name="SearchBar" width="1334" height="155"/>
+        <image name="badminton" width="498" height="497"/>
+        <image name="basketball" width="498" height="497"/>
+        <image name="build" width="498" height="497"/>
+        <image name="female" width="690" height="348"/>
+        <image name="geder" width="602" height="348"/>
+        <image name="inputNameField" width="2451" height="345"/>
+        <image name="male" width="690" height="343"/>
+        <image name="pingpong" width="498" height="497"/>
+        <image name="run" width="498" height="497"/>
+        <image name="soccer" width="498" height="497"/>
+        <image name="tennise" width="498" height="497"/>
+    </resources>
 </document>
